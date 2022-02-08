@@ -1,4 +1,54 @@
 :root {
-    --color-bg: #596D48;
+    --color-button: #596D48;
     --color-input: #E5E7EB;
 }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-button: #596D48;
+        --color-input: #E5E7EB;
+    }
+}
+
+body {
+    display: flex;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    box-shadow: rgba(100, 100, 111, 0.4) 0px 12px 8px -8px;
+    border: transparent;
+}
+fieldset > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+fieldset input {
+    width: 90%;
+}
+
+#submit {
+    background-color: var(--color-button);
+    color: white;
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+
+label {
+    text-transform: uppercase;
+}
+
+#logo {
+    position: absolute;
+}
+
+# credits {
+    position: absolute;
+}
+/* html, body {
+    margin: 0;
+} */
