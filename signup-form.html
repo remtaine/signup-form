@@ -6,11 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
 
+    <link rel="icon" href="/images/odin-lined.png">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+        <img src="/images/leaves-by-halie-west.jpg" height="100%" width="30%"
+        alt="leaves">
+        <img id="logo" src="/images/odin-lined.png" alt="Odin logo">
+        <div id="credits">Photo by <a href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie West</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </div>
+    </header>
+    <main>
+        <div>
+            <h2>This is not a real online service! You know you need something like this in your life to help you
+            realize you dreams. Sign up <i>now</i> to get started!</h2>
+            <h2>You <i>know</i> you want to.</h2>
+        </div>
+        <form name="signup-form" method="post" data-netlify="true">
+            <fieldset>
+                <div>
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name"
+                    placeholder="Bob" required>
+                </div>
+
+                <div>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name"
+                    placeholder="Smith" required>
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"
+                    placeholder="name@email.com" required>
+                </div>
+
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone"
+                    placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                    required>
+                </div>
+
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password"
+                    placeholder="**********" required>
+                </div>
+
+                <div>
+                    <label for="password2">Confirm Password</label>
+                    <input type="password" id="password2" name="password2"
+                    placeholder="**********" required>
+                </div>
+            </fieldset>
+        </form>
+        <div>
+            <input type="button" id="submit" value="Create Account">
+            <div>Already have an account? <a href="#">Log in</a></div>
+        </div>
+    </main>
 </body>
 </html>
