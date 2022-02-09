@@ -1,0 +1,137 @@
+@font-face {
+    font-family: norse-bold;
+    src: url("/fonts/Norse-Bold.otf");
+  }
+
+:root {
+    --color-button: #596D48;
+    --color-input: #E5E7EB;
+    --margin: 50px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-button: #596D48;
+        --color-input: #E5E7EB;
+    }
+}
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+#focused {
+    box-shadow: rgba(100, 100, 111, 0.4) 0px 12px 8px -8px;
+    padding: var(--margin);
+}
+legend {
+    margin: var(--margin) 0 calc(var(--margin)/2);
+}
+
+label {
+    font-size: 0.8rem;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 10px;
+    border: transparent;
+    padding: 0;
+    /* justify-content: start; */
+}
+fieldset > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+fieldset input {
+    width: 90%;
+}
+
+#submit {
+    background-color: var(--color-button);
+    color: white;
+    border-radius: 10px;
+    padding: 5px 20px;
+    /* border-width: 0; */
+    box-shadow: rgba(100, 100, 111, 0.3) 0px 4px 4px 0px;
+    margin-bottom: calc(var(--margin)/2);
+}
+
+label {
+    color: rgb(60, 60, 60);
+}
+
+label, #logo {
+    text-transform: uppercase;
+}
+
+header {
+    background-image: url("/images/leaves-by-halie-west.jpg");
+    background-size: cover;
+    height: 100%;
+    /* width: 100%; */
+    color: white;
+    font-size: 1.5rem;
+    /* display: flex; */
+    /* flex-direction: column;
+    justify-content: space-around; */
+}
+
+header a {
+    color: white;
+}
+
+#logo {
+    font-family: norse-bold, Helvetica, Arial, sans-serif;
+
+    position: relative;
+    top: 20%;
+    height: 10%;
+    width: inherit;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* background-color: rgba(255, 0 , 0, 250); */
+    padding: 15px 0;
+}
+
+#credits {
+    position: absolute;
+    /* left: 15%; */
+    bottom: 10px;
+    width: inherit;
+    margin-left: 10%;
+    padding: auto;
+    font-size: 0.8rem;
+    text-align: center; 
+    color: white;   
+}
+
+#logo h1 {
+    align-self: center;
+    margin: 0;
+}
+
+#create {
+    margin: calc(var(--margin)/2) 0 0 var(--margin);
+}
+
+
+
+#create a{
+    color: var(--color-button);
+}
+/* html, body {
+    margin: 0;
+} */
